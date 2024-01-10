@@ -1,1 +1,3 @@
-export { default as Foo } from './Foo';
+import Header from './Header'
+
+export { Header }

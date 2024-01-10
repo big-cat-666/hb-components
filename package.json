@@ -2,28 +2,25 @@
   "name": "hb-components",
   "version": "0.0.1",
   "description": "A react library of components for practice",
+  "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "scripts": {
-    "start": "npm run dev",
-    "dev": "dumi dev",
-    "build": "father build",
-    "build:watch": "father dev",
-    "docs:build": "dumi build",
-    "prepare": "husky install && dumi setup",
-    "doctor": "father doctor",
-    "lint": "npm run lint:es && npm run lint:css",
-    "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
-    "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepublishOnly": "father doctor && npm run build"
-  },
-  "authors": [
-    "hubiao"
-  ],
-  "license": "MIT",
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "father build",
+    "build:watch": "father dev",
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "doctor": "father doctor",
+    "lint": "npm run lint:es && npm run lint:css",
+    "lint:css": "stylelint.js \"{src,test}/**/*.{css,less}\"",
+    "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
+    "start": "npm run dev"
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -46,12 +43,10 @@
       "prettier --parser=typescript --write"
     ]
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "axios": "^1.6.5",
+    "react-redux": "^9.0.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -70,5 +65,15 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "stylelint": "^14.9.1"
-  }
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "hubiao"
+  ]
 }

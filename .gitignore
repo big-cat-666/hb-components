@@ -4,3 +4,8 @@ node_modules
 .dumi/tmp-test
 .dumi/tmp-production
 .DS_Store
+build/
+.DS_Store
+.vite/
+**/node_modules
+yarn-error.log*

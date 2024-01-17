@@ -1,7 +1,7 @@
 import { QuestionCircleOutlined } from '@ant-design/icons'
 import { Tooltip } from 'antd'
 import React from 'react'
-import styles from './index.module.less'
+import './index.less'
 
 function Header({
   children,
@@ -14,8 +14,8 @@ function Header({
   style?: React.CSSProperties
 }>) {
   return (
-    <div className={`${styles.header} header`} style={style}>
-      <span className={`${styles.title} header-title`}>
+    <div className="header" style={style}>
+      <span className="title">
         {description ? (
           <>
             <span className="title-text" style={{ paddingRight: 4 }}>

@@ -1,3 +1,9 @@
+/**
+ * 检查给定字符串是否是有效的HTTP URL
+ *
+ * @param {string} str - 需要检查的字符串
+ * @return {boolean} 如果字符串是有效的HTTP URL，返回true，否则返回false
+ */
 export function isValidHttpUrl(str: string) {
   const pattern = new RegExp(
     '^(https?:\\/\\/)?' + // protocol

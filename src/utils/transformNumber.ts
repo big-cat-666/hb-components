@@ -1,3 +1,10 @@
+/**
+ * 将给定的数字转换为具有单位的格式化值
+ *
+ * @param {number | null | undefined} num - 要转化的数字
+ * @return {{ value: number | string, unit: string }} - 转换后的值及其单位
+ */
+
 export function transformNumber(num: number | null | undefined): {
   value: number | string
   unit: string

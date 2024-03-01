@@ -47,6 +47,7 @@
     "@reduxjs/toolkit": "^2.0.1",
     "antd": "^5.12.8",
     "axios": "^1.6.5",
+    "pinyin-match": "^1.2.5",
     "react-redux": "^9.0.4"
   },
   "devDependencies": {

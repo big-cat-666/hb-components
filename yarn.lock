@@ -8628,6 +8628,11 @@ pino@7.11.0:
     sonic-boom "^2.2.1"
     thread-stream "^0.15.1"
 
+pinyin-match@^1.2.5:
+  version "1.2.5"
+  resolved "https://npm.baijia.com/pinyin-match/-/pinyin-match-1.2.5.tgz#38633596412e8d3e6fa6b25a0c53e10746dcda45"
+  integrity sha512-+F3bi5v95enkqSJ0nD1e2fGp8Uj3YCRBzka3DlCQ4tyurfqYmAChLR3aAO/c/Pk+xBgvEx9zI35HoyYATSb0mw==
+
 pirates@^4.0.4:
   version "4.0.6"
   resolved "https://registry.npmmirror.com/pirates/-/pirates-4.0.6.tgz#3018ae32ecfcff6c29ba2267cbf21166ac1f36b9"
